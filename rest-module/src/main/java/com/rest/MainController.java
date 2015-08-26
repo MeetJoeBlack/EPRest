@@ -18,7 +18,7 @@ public class MainController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     @ResponseBody
-    public ResponseEntity<String> getStamp() throws Exception {
+    public ResponseEntity<String> index() throws Exception {
         log.debug("GET request on path: /index");
         return new ResponseEntity<String>("Success", HttpStatus.OK);
     }

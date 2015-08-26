@@ -22,6 +22,7 @@ public class Initializer implements WebApplicationInitializer {
         ctx.register(WebAppConfig.class);
         // add context listener
         servletContext.addListener(new ContextLoaderListener(ctx));
+        servletContext.setInitParameter("spring.profiles.active", "production");
         ctx.setServletContext(servletContext);
 
         // configure Dispatcher Servlet mapping
