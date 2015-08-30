@@ -1,10 +1,13 @@
 package com.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.DateSerializer;
+
 import java.sql.Date;
 
 /**
- * Created by Gabriel on 8/27/2015.
- *
+ * Employee model POJO
+ * @author Gabriel
  */
 public class Employee {
     Long id;
@@ -12,6 +15,17 @@ public class Employee {
     String fio;
     Date birth;
     Integer salary;
+
+    public Employee() {
+    }
+
+    public Employee(Long id, Long depId, String fio, Date birth, Integer salary) {
+        this.id = id;
+        this.depId = depId;
+        this.fio = fio;
+        this.birth = birth;
+        this.salary = salary;
+    }
 
     public Long getId() {
         return id;
@@ -37,6 +51,7 @@ public class Employee {
         this.fio = fio;
     }
 
+    @JsonSerialize(using=DateSerializer.class)
     public Date getBirth() {
         return birth;
     }
@@ -55,7 +70,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee [id=" + id + ", depId=" + depId + ", fio=" + fio + "]" + ", fio=" + fio + "]" + "," +
-                " birth=" + birth + "]" + ", salary=" + salary + "]";
+        return "Employee [id=" + id + ", depId=" + depId + ", fio=" + fio  + "," +
+                " birth=" + birth +   ", salary=" + salary + "]";
     }
 }

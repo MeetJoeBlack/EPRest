@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by Gabriel on 8/25/2015.
+ * Main app controller
+ * @author Gabriel
  */
 @RestController
 public class MainController {

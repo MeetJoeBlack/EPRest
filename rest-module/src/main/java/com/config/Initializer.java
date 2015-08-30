@@ -10,10 +10,12 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
 /**
- * Created by Alexey Gabriel
+ * WebApp initializer class
+ * @author Gabriel
  */
 public class Initializer implements WebApplicationInitializer {
     private static final String DISPATCHER_SERVLET_NAME = "dispatcher";
+
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {

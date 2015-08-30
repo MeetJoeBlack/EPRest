@@ -3,7 +3,8 @@ package com.error;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * Created by Gabriel
+ * Error response object
+ * @author Gabriel
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ErrorResponse {

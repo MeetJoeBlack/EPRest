@@ -11,7 +11,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.sql.DataSource;
 
 /**
- * Created by Gabriel on 3/31/2015.
+ * Database configuration class
+ * @author Gabriel
  */
 @Profile("production")
 @Configuration

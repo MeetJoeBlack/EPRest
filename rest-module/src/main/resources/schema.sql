@@ -11,7 +11,7 @@ CREATE TABLE department (
 
 CREATE TABLE employee (
   id INTEGER IDENTITY PRIMARY KEY,
-  depId integer,
+  depId INTEGER,
   fio  VARCHAR(255),
   birth DATE,
   salary INTEGER NOT NULL,

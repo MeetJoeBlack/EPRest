@@ -10,7 +10,8 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import javax.sql.DataSource;
 
 /**
- * Created by Gabriel on 8/27/2015.
+ * Test database configuration class
+ * @author Gabriel
  */
 @Configuration
 @Profile("unit-test")
